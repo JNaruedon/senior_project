@@ -1,0 +1,66 @@
+
+<!DOCTYPE html>
+<?php
+
+header("Cache-Control: no-store, no-cache, must-revalidate, max-age=0");
+header("Cache-Control: post-check=0, pre-check=0", false);
+header("Pragma: no-cache");
+?>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>Login | Easy Extra Education</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+  <link rel='stylesheet prefetch' href='http://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700,900|RobotoDraft:400,100,300,500,700,900'>
+  <link rel='stylesheet prefetch' href='http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css'>
+  <link rel="stylesheet" href="assets/css/login.css">
+  <link rel="shortcut icon" href="assets/ico/favicon.ico">
+
+</head>
+
+<body>
+  <br><br><br>
+  <div align="center"><img src = "assets/img/logo2.png" width="300" height="250"></div>
+  <div class="module form-module">
+
+      <div class="tooltip">Click Me</div>
+
+
+
+  <div class="form">
+    <h2>สร้างบัญชีผู้ใช้งาน</h2>
+    <h2>สำหรับ "สถาบัน/ผู้สอน"</h2>
+    <form name="frmLogin" method="post" action="registerTutor.php">
+      <input name="tutorname" type="text" id="tutorname" placeholder="ชื่อสถาบัน/ชื่อผู้สอน"/>
+      <input name="username" type="text" id="username" placeholder="Username"/>
+      <input name="fname" type="text" id="fname" placeholder="ชื่อ"/>
+      <input name="lname" type="text" id="lname" placeholder="นามสกุล"/>
+      <input name="password" type="password" id="password" placeholder="รหัสผ่าน"/>
+      <input name="conpassword" type="password" id="conpassword" placeholder="ใส่รหัสผ่านอีกครั้ง"/>
+      <input name="email" type="text" id="email" placeholder="อีเมลล์"/>
+      <input name="phone" type="text" id="phone" placeholder="เบอร์โทรศัพท์"/>
+      <input name="address" type="text" id="address" placeholder="เลขที่"/>
+      <input name="city" type="text" id="city" placeholder="อำเภอ"/>
+      <input name="province" type="text" id="province" placeholder="จังหวัด"/>
+      <input name="code" type="text" id="code" placeholder="รหัสไปรษณีย์"/>
+      <button>Register</button>
+    </form>
+  </div>
+
+</div>
+
+<div class="container">
+  <center><button type="button" class="btn btn-link" onclick="window.location.href='index.php">กลับสู่หน้าแรก</button></center>
+</div>
+
+<!-- <center><button onclick="window.location.href='index.html'">กลับสู่หน้าแรก</button></div></center> -->
+  <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+  <script src="assets/js/login.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+</body>
+</html>
